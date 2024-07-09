@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter GIF Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lobster&family=Courier+Prime&display=swap');
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f0f2f5;
+            margin: 0;
+            height: 100vh;
+            color: #333;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input, .input-group select {
+            width: calc(100% - 20px);
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #generateButton {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #generateButton:hover {
+            background: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+        }
+        .download-instructions {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+            display: none;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter GIF Generator</h1>
+        <div class="input-group">
+            <label for="numberInput">Number</label>
+            <input type="number" id="numberInput" placeholder="Enter a number" />
+        </div>
+        <div class="input-group">
+            <label for="bgColorInput">Background Color</label>
+            <input type="color" id="bgColorInput" value="#ffffff" />
+        </div>
+        <div class="input-group">
+            <label for="numColorInput">Number Color</label>
+            <input type="color" id="numColorInput" value="#000000" />
+        </div>
+        <div class="input-group">
+            <label for="durationInput">Duration (seconds)</label>
+            <input type="number" id="durationInput" placeholder="Enter duration in seconds" value="2" />
+        </div>
+        <div class="input-group">
+            <label for="fontInput">Font</label>
+            <select id="fontInput">
+                <option value="Arial" style="font-family: Arial;">Arial</option>
+                <option value="Courier Prime" style="font-family: 'Courier Prime';">Courier Prime</option>
+                <option value="Lobster" style="font-family: Lobster;">Lobster</option>
+                <option value="Open Sans" style="font-family: 'Open Sans';">Open Sans</option>
+                <option value="Roboto" style="font-family: Roboto;">Roboto</option>
+            </select>
+        </div>
+        <button id="generateButton">Generate GIF</button>
+        <img id="result" alt="Generated GIF" />
+        <div class="download-instructions">
+            Right-click and 'save as...' to download the generated GIF
+        </div>
+        <div class="footer">Made with ❤️ by Gianmaria, ChatGPT & Claude</div>
+    </div>
+
+    <canvas id="canvas" width="200" height="100" style="display: none;"></canvas>
+
+    <script src="gif.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
