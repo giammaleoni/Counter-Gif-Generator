@@ -15,8 +15,8 @@ In the past, I created something similar directly on PPT, with built-in animatio
 
 ## Usage
 - Alternative 1 - you can find the ready to use web application here [Counter GIF Generator](https://counter-gif-generator.pages.dev/)
-- Alternative 2 - you can self host running npm start from the repo folder
-- Alternative 3 - host on your preferred hosting solution
+- Alternative 2 - you can self host running `npm start` from the repo folder
+- Alternative 3 - download and host on your preferred hosting solution
 
 ![webapp screenshot](./img/webapp-screenshot.png)
 
