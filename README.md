@@ -6,7 +6,7 @@ You can personalize it:
 - Target number
 - Background color
 - Font color
-- Font size
+- Font
 - Animation duration
 
 This is especially useful for generating animations to be inserted into PPT presentations (or at least I generate this for myself with this use).
