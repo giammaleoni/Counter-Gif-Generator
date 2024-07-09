@@ -18,7 +18,7 @@ In the past, I created something similar directly on PPT, with built-in animatio
 - Alternative 2 - you can self host running npm start from the repo folder
 - Alternative 3 - host on your preferred hosting solution
 
-![webapp screenshot](.\img\webapp-screenshot.png)
+![webapp screenshot](./img/webapp-screenshot.png)
 
 ## License
 Feel free to fork and/or use as you wish
